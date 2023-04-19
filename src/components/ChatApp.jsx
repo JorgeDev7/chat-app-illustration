@@ -10,12 +10,6 @@ import dog3 from '../assets/dog-image-3.jpg'
 
 export default function ChatApp() {
 
-    const [load, setLoad] = useState(false);
-
-    window.onload = () => {
-        setLoad(!load)
-    }
-
     return (
         <div className="app">
             <div className="app__noch">
@@ -49,14 +43,14 @@ export default function ChatApp() {
                 <main className='app__main'>
                     <div className='block-1'>
                         <div
-                            className={`msg ${load && 'op-1'}`}
+                            className={`msg`}
                         >
                             <p className="msg__text">
                                 That sounds great. I’d be happy to discuss more.
                             </p>
                         </div>
                         <div
-                            className={`msg ${load ? 'op-1' : ''}`}
+                            className={`msg`}
                         >
                             <p className="msg__text">
                                 Could you send over some pictures of your dog, please?
@@ -66,30 +60,30 @@ export default function ChatApp() {
                     <div className='block-2'>
                         <figure className='imgs'>
                             <img
-                                className={`img-dog ${load ? 'op-1' : ''}`}
+                                className={`img-dog`}
                                 src={dog1}
                                 alt="dog, smile, golden"
                             />
                             <img
-                                className={`img-dog ${load ? 'op-1' : ''}`}
+                                className={`img-dog`}
                                 src={dog2}
                                 alt="dog, looking to front"
                             />
                             <img
-                                className={`img-dog ${load ? 'op-1' : ''}`}
+                                className={`img-dog`}
                                 src={dog3}
                                 alt="dog, with a stick"
                             />
                         </figure>
                         <div
-                            className={`msg msg--right ${load ? 'op-1' : ''}`}
+                            className={`msg msg--right`}
                         >
                             <p className='msg__text msg__text--right'>
                                 Here are a few pictures. She’s a happy girl!
                             </p>
                         </div>
                         <div
-                            className={`msg msg--right ${load ? 'op-1' : ''}`}
+                            className={`msg msg--right`}
                         >
                             <p className='msg__text msg__text--right'>
                                 Can you make it?
@@ -98,14 +92,14 @@ export default function ChatApp() {
                     </div>
                     <div className='block-3'>
                         <div
-                            className={`msg ${load ? 'op-1' : ''}`}
+                            className={`msg`}
                         >
                             <p className="msg__text">
                                 She looks so happy! The time we discussed works. How long shall I take her out for?
                             </p>
                         </div>
                         <div
-                            className={`price-box price-box-1 ${load ? 'op-1' : ''}`}
+                            className={`price-box price-box-1`}
                         >
                             <input type="radio" name="price" id="price" />
                             <p className='price-box__text'>
@@ -114,7 +108,7 @@ export default function ChatApp() {
                             <p className='price-box__price'>$29</p>
                         </div>
                         <div
-                            className={`price-box price-box-2 ${load ? 'op-1' : ''}`}
+                            className={`price-box price-box-2`}
                         >
                             <input type="radio" name="price" id="price" />
                             <p className='price-box__text'>

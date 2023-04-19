@@ -284,7 +284,6 @@ h6 {
   background-color: var(--msgBg);
   padding: 1rem;
   border-radius: 1rem 1rem 1rem .5rem;
-  opacity: 0;
 }
 
 .block-1 .msg:nth-child(1) {
@@ -338,7 +337,6 @@ h6 {
 .img-dog {
   width: 5rem;
   border-radius: 1rem;
-  opacity: 0;
 }
 
 .imgs img:nth-child(1) {
@@ -444,7 +442,6 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  opacity: 0;
 }
 
 .block-3 .price-box-1 {
@@ -534,8 +531,4 @@ h6 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.op-1 {
-  opacity: 1;
 }

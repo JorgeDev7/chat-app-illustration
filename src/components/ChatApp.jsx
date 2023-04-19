@@ -13,7 +13,7 @@ export default function ChatApp() {
     const [load, setLoad] = useState(false);
 
     window.onload = () => {
-        setLoad(true)
+        setLoad(!load)
     }
 
     return (

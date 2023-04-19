@@ -49,7 +49,7 @@ export default function ChatApp() {
                 <main className='app__main'>
                     <div className='block-1'>
                         <div
-                            className={`msg ${load ? 'op-1' : ''}`}
+                            className={`msg ${load && 'op-1'}`}
                         >
                             <p className="msg__text">
                                 That sounds great. I’d be happy to discuss more.
